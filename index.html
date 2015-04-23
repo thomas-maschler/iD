@@ -239,10 +239,109 @@
         <div id='id-container'></div>
         <script>
             iD.data.load(function() {
+                // extend iD.data.presets w/ logging road preset
+                iD.data.presets.presets["logging_road"] = {
+                  "name": "Logging Road",
+                  "geometry": ["line"],
+                  "tags": {
+                    "highway":"track",
+                    "access":"forestry"
+                  },
+                  "fields": [
+                   //{"key": "start_date", "type": "textarea" } 
+                  ]
+                };
+
+                iD.data.presets.presets["plantation_road"] = {
+                  "name": "Plantation Road",
+                  "geometry": ["line"],
+                  "tags": {
+                    "highway":"track",
+                    "access":"agricultural"
+                  },
+                  "fields": [
+                   //{"key": "start_date", "type": "textarea" } 
+                  ]
+                };
+
+                var customImagery = [
+                        {"name": "UMD Landsat 2000",
+                         "type": "tms",
+                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2000/{z}/{y}/{x}.png",
+                         "default": true
+                        },
+                        {"name": "UMD Landsat 2001",
+                         "type": "tms",
+                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2001/{z}/{y}/{x}.png"
+                        },
+                        {"name": "UMD Landsat 2002",
+                         "type": "tms",
+                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2002/{z}/{y}/{x}.png"
+                        },
+                        {"name": "UMD Landsat 2003",
+                         "type": "tms",
+                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2003/{z}/{y}/{x}.png"
+                        },
+                        {"name": "UMD Landsat 2004",
+                         "type": "tms",
+                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2004/{z}/{y}/{x}.png"
+                        },
+                        {"name": "UMD Landsat 2005",
+                         "type": "tms",
+                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2005/{z}/{y}/{x}.png"
+                        },
+                        {"name": "UMD Landsat 2006",
+                         "type": "tms",
+                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2006/{z}/{y}/{x}.png"
+                        },
+                        {"name": "UMD Landsat 2007",
+                         "type": "tms",
+                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2007/{z}/{y}/{x}.png"
+                        },
+                        {"name": "UMD Landsat 2008",
+                         "type": "tms",
+                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2008/{z}/{y}/{x}.png"
+                        },
+                        {"name": "UMD Landsat 2009",
+                         "type": "tms",
+                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2009/{z}/{y}/{x}.png"
+                        },
+                        {"name": "UMD Landsat 2010",
+                         "type": "tms",
+                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2010/{z}/{y}/{x}.png"
+                        },
+                        {"name": "UMD Landsat 2011",
+                         "type": "tms",
+                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2011/{z}/{y}/{x}.png"
+                        },
+                        {"name": "UMD Landsat 2012",
+                         "type": "tms",
+                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2012/{z}/{y}/{x}.png"
+                        },
+                        {"name": "UMD Landsat 2013",
+                         "type": "tms",
+                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2013/{z}/{y}/{x}.png"
+                        },
+
+                        {"name": "Logging Roads",
+                         "type": "tms",
+                         "template": "http://api.tiles.mapbox.com/v4/crowdcover.e8c210c5/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiY3Jvd2Rjb3ZlciIsImEiOiI3akYtNERRIn0.uwBAdtR6Zk60Bp3vTKj-kg",
+                         "overlay": true
+                        },
+                        {"name": "Locator Map",
+                         "type": "tms",
+                         "template": "http://{switch:a,b,c}.tiles.mapbox.com/v4/openstreetmap.map-inh76ba2/{zoom}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcCIsImEiOiJncjlmd0t3In0.DmZsIeOW-3x-C5eX-wAqTw",
+                         "overlay": true
+                        }
+                ];
+
                 id = iD()
                     .presets(iD.data.presets)
-                    .imagery(iD.data.imagery)
+                    //.presets(customPresets)
+                    //.imagery(iD.data.imagery)
+                    .imagery(customImagery)
                     .taginfo(iD.taginfo())
+                    .minEditableZoom(12)  // jlc
                     .assetPath('dist/');
 
                 d3.select('#id-container')
