@@ -1,5 +1,7 @@
 # iD - friendly JavaScript editor for [OpenStreetMap](http://www.openstreetmap.org/)
 
+*customized for the [Logging Roads Initiative](http://crowdcover.github.io/logging-roads/)*
+
 [![Build Status](https://secure.travis-ci.org/openstreetmap/iD.png)](https://travis-ci.org/openstreetmap/iD)
 
 ## Basics
