@@ -196,6 +196,18 @@ iD.ui = function(context) {
         context.loadLocale(function() {
             render(container);
         });
+
+        /////////////////////////////////////////////////////////
+        // now that DOM elements are created, start clicking them
+        /////////////////////////////////////////////////////////
+        var mapFeaturesDropDown = document.querySelectorAll('.hide-toggle')[3];
+
+        mapFeaturesDropDown.click();
+        
+        var mapFeaturesFilter = document.querySelectorAll('.filters')[2],
+            otherFeaturesCheckbox = mapFeaturesFilter.querySelectorAll('label')[1];
+
+        otherFeaturesCheckbox.click();
     }
 
     ui.sidebar = iD.ui.Sidebar(context);

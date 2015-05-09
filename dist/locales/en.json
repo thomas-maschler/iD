@@ -314,6 +314,14 @@
         "autohidden": "These features have been automatically hidden because too many would be shown on the screen.  You can zoom in to edit them."
     },
     "feature": {
+        "logging_roads": {
+            "description": "Logging Roads",
+            "tooltip": "Show or Hide all Logging Roads"
+        },
+        "other_features": {
+            "description": "Other Features",
+            "tooltip": "Show or Hide all Non-Logging Roads"
+        },
         "points": {
             "description": "Points",
             "tooltip": "Points of Interest"

@@ -313,6 +313,14 @@
         "autohidden": "Ces éléments ont été automatiquement cachés parce qu'un trop grand nombre d'entre eux seraient affichés à l'écran. Vous pouvez zoomer pour les éditer."
     },
     "feature": {
+        "logging_roads": {
+            "description": "Logging Roads",
+            "tooltip": "Show or Hide all Logging Roads"
+        },
+        "other_features": {
+            "description": "Other Features",
+            "tooltip": "Show or Hide all Non-Logging Roads"
+        },
         "points": {
             "description": "Points",
             "tooltip": "Points d'intérêt"
