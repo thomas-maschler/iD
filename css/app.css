@@ -2991,3 +2991,15 @@ img.wiki-image {
     background: rgba(0, 0, 0, 0) url(img/sprite.svg) no-repeat -400px -220px;
     margin: auto;
 }
+
+
+
+/*/////////////////////////////////////*/
+/*/////////// JLC Custom //////////////*/
+/*/////////////////////////////////////*/
+
+/* hide name field - included by default in all feature's forms.  
+would be better to do this in the js */
+.form-field.form-field-name {
+  display: none;
+}
