@@ -3003,3 +3003,8 @@ would be better to do this in the js */
 .form-field.form-field-name {
   display: none;
 }
+
+/* hide walkthrough button */
+li.walkthrough {
+  display: none;
+}
