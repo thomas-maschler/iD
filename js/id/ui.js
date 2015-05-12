@@ -175,7 +175,7 @@ iD.ui = function(context) {
         context.enter(iD.modes.Browse(context));
 
         context.container()
-            .call(iD.ui.Splash(context))
+            // .call(iD.ui.Splash(context))
             .call(iD.ui.Restore(context));
 
         var authenticating = iD.ui.Loading(context)
