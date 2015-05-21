@@ -351,15 +351,19 @@
                          "type": "tms",
                          "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2013/{z}/{y}/{x}.png"
                         },
-
+                        {"name": "Locator Map",
+                         "type": "tms",
+                         "template": "http://{switch:a,b,c}.tiles.mapbox.com/v4/openstreetmap.map-inh76ba2/{zoom}/{x}/{y}.png?access_token=pk.eyJ1IjoiY3Jvd2Rjb3ZlciIsImEiOiI3akYtNERRIn0.uwBAdtR6Zk60Bp3vTKj-kg",
+                         "overlay": true
+                        },
                         {"name": "Logging Roads",
                          "type": "tms",
                          "template": "http://api.tiles.mapbox.com/v4/crowdcover.e8c210c5/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiY3Jvd2Rjb3ZlciIsImEiOiI3akYtNERRIn0.uwBAdtR6Zk60Bp3vTKj-kg",
                          "overlay": true
                         },
-                        {"name": "Locator Map",
+                        {"name": "Logging Concessions",
                          "type": "tms",
-                         "template": "http://{switch:a,b,c}.tiles.mapbox.com/v4/openstreetmap.map-inh76ba2/{zoom}/{x}/{y}.png?access_token=pk.eyJ1IjoiY3Jvd2Rjb3ZlciIsImEiOiI3akYtNERRIn0.uwBAdtR6Zk60Bp3vTKj-kg",
+                         "template": "http://api.tiles.mapbox.com/v4/crowdcover.332b16e8/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiY3Jvd2Rjb3ZlciIsImEiOiI3akYtNERRIn0.uwBAdtR6Zk60Bp3vTKj-kg",
                          "overlay": true
                         }
                 ];
