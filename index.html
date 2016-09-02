@@ -260,7 +260,9 @@
                       "2011",
                       "2012",
                       "2013",
-                      "after 2013"
+                      "2014",
+                      "2015",
+                      "2016"
                   ],
                   "label": "Start Date"
                 };
@@ -288,13 +290,25 @@
                 };
 
                 var customImagery = [
+                        {
+                            "name": "Bing aerial imagery",
+                            "type": "bing",
+                            "description": "Satellite and aerial imagery.",
+                            "template": "http://www.bing.com/maps/",
+                            "scaleExtent": [
+                                0,
+                                22
+                            ],
+                            "id": "Bing",
+                            "default": true
+                        },
                         {"name": "MapBox Satellite",
                          "type": "tms",
                          "template": "http://{switch:a,b,c}.tiles.mapbox.com/v4/openstreetmap.map-inh7ifmo/{zoom}/{x}/{y}.png?access_token=pk.eyJ1IjoiY3Jvd2Rjb3ZlciIsImEiOiI3akYtNERRIn0.uwBAdtR6Zk60Bp3vTKj-kg",
                          "terms_text": "Terms & Feedback",
                          "terms_url": "http://www.mapbox.com/about/maps/",
                          "default": true
-                        },                
+                        },
                         {"name": "UMD Landsat 2000",
                          "type": "tms",
                          "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2000/{z}/{y}/{x}.png"
@@ -355,17 +369,27 @@
                          "type": "tms",
                          "template": "https://storage.googleapis.com/earthenginepartners-hansen/tiles/gfc2015/last_457/{z}/{x}/{y}.jpg"
                         },
-                        {"name": "Locator Map",
+                        {"name": "Landsat 2016 - Rep. of Congo",
                          "type": "tms",
-                         "template": "http://{switch:a,b,c}.tiles.mapbox.com/v4/openstreetmap.map-inh76ba2/{zoom}/{x}/{y}.png?access_token=pk.eyJ1IjoiY3Jvd2Rjb3ZlciIsImEiOiI3akYtNERRIn0.uwBAdtR6Zk60Bp3vTKj-kg",
+                         "template": "https://s3.amazonaws.com/maphubs-raster-tiles/roc-landsat-2016-latest/{z}/{x}/{-y}.png"
+                        },
+
+                        {"name": "GLAD Alerts",
+                         "type": "tms",
+                         "template": "https://maphubs.com/raster/glad/{z}/{x}/{y}.png",
                          "overlay": true
                         },
-                        {"name": "Logging Roads",
+                        {"name": "Tree Cover Loss (2000-2014)",
                          "type": "tms",
-                         "template": "http://api.tiles.mapbox.com/v4/crowdcover.e8c210c5/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiY3Jvd2Rjb3ZlciIsImEiOiI3akYtNERRIn0.uwBAdtR6Zk60Bp3vTKj-kg",
+                         "template": "https://maphubs.com/raster/lossyear/{z}/{x}/{y}.png",
                          "overlay": true
                         },
-                        {"name": "Logging Concessions",
+                        {"name": "Congo Basin Roads",
+                         "type": "tms",
+                         "template": "https://maphubs.com/raster/loggingroads/{z}/{x}/{y}.png",
+                         "overlay": true
+                        },
+                        {"name": "DRC Logging Concessions",
                          "type": "tms",
                          "template": "http://api.tiles.mapbox.com/v4/crowdcover.332b16e8/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiY3Jvd2Rjb3ZlciIsImEiOiI3akYtNERRIn0.uwBAdtR6Zk60Bp3vTKj-kg",
                          "overlay": true
