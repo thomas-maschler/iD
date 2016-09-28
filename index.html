@@ -290,6 +290,21 @@
                 };
 
                 var customImagery = [
+                          {"name": "GLAD Alerts",
+                           "type": "tms",
+                           "template": "https://maphubs.com/raster/glad/{z}/{x}/{y}.png",
+                           "overlay": true
+                          },
+                          {"name": "Tree Cover Loss (2000-2014)",
+                           "type": "tms",
+                           "template": "https://maphubs.com/raster/lossyear/{z}/{x}/{y}.png",
+                           "overlay": true
+                          },
+                          {"name": "Congo Basin Roads",
+                           "type": "tms",
+                           "template": "https://maphubs.com/raster/loggingroads/{z}/{x}/{y}.png",
+                           "overlay": true
+                         },
                         {
                             "name": "Bing aerial imagery",
                             "type": "bing",
@@ -309,91 +324,81 @@
                          "terms_url": "http://www.mapbox.com/about/maps/",
                          "default": true
                         },
-                        {"name": "UMD Landsat 2000",
+
+
+                        {"name": "UMD Landsat 2016",
                          "type": "tms",
-                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2000/{z}/{y}/{x}.png"
+                         "template": "https://storage.googleapis.com/wri-tiles/landsat/2016/{z}/{x}/{y}.jpg"
                         },
-                        {"name": "UMD Landsat 2001",
+                        {"name": "UMD Landsat 2015",
                          "type": "tms",
-                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2001/{z}/{y}/{x}.png"
+                         "template": "https://storage.googleapis.com/wri-tiles/landsat/2015/{z}/{x}/{y}.jpg"
                         },
-                        {"name": "UMD Landsat 2002",
+                        {"name": "GLAD Landsat 2016 - Rep. of Congo",
                          "type": "tms",
-                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2002/{z}/{y}/{x}.png"
-                        },
-                        {"name": "UMD Landsat 2003",
-                         "type": "tms",
-                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2003/{z}/{y}/{x}.png"
-                        },
-                        {"name": "UMD Landsat 2004",
-                         "type": "tms",
-                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2004/{z}/{y}/{x}.png"
-                        },
-                        {"name": "UMD Landsat 2005",
-                         "type": "tms",
-                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2005/{z}/{y}/{x}.png"
-                        },
-                        {"name": "UMD Landsat 2006",
-                         "type": "tms",
-                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2006/{z}/{y}/{x}.png"
-                        },
-                        {"name": "UMD Landsat 2007",
-                         "type": "tms",
-                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2007/{z}/{y}/{x}.png"
-                        },
-                        {"name": "UMD Landsat 2008",
-                         "type": "tms",
-                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2008/{z}/{y}/{x}.png"
-                        },
-                        {"name": "UMD Landsat 2009",
-                         "type": "tms",
-                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2009/{z}/{y}/{x}.png"
-                        },
-                        {"name": "UMD Landsat 2010",
-                         "type": "tms",
-                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2010/{z}/{y}/{x}.png"
-                        },
-                        {"name": "UMD Landsat 2011",
-                         "type": "tms",
-                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2011/{z}/{y}/{x}.png"
-                        },
-                        {"name": "UMD Landsat 2012",
-                         "type": "tms",
-                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2012/{z}/{y}/{x}.png"
-                        },
-                        {"name": "UMD Landsat 2013",
-                         "type": "tms",
-                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2013/{z}/{y}/{x}.png"
+                         "template": "https://s3.amazonaws.com/maphubs-raster-tiles/roc-landsat-2016-latest/{z}/{x}/{-y}.png"
                         },
                         {"name": "UMD Landsat 2014",
                          "type": "tms",
                          "template": "https://storage.googleapis.com/earthenginepartners-hansen/tiles/gfc2015/last_457/{z}/{x}/{y}.jpg"
                         },
-                        {"name": "Landsat 2016 - Rep. of Congo",
+                        {"name": "UMD Landsat 2013",
                          "type": "tms",
-                         "template": "https://s3.amazonaws.com/maphubs-raster-tiles/roc-landsat-2016-latest/{z}/{x}/{-y}.png"
+                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2013/{z}/{y}/{x}.png"
                         },
-
-                        {"name": "GLAD Alerts",
+                        {"name": "UMD Landsat 2012",
                          "type": "tms",
-                         "template": "https://maphubs.com/raster/glad/{z}/{x}/{y}.png",
-                         "overlay": true
+                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2012/{z}/{y}/{x}.png"
                         },
-                        {"name": "Tree Cover Loss (2000-2014)",
+                        {"name": "UMD Landsat 2011",
                          "type": "tms",
-                         "template": "https://maphubs.com/raster/lossyear/{z}/{x}/{y}.png",
-                         "overlay": true
+                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2011/{z}/{y}/{x}.png"
                         },
-                        {"name": "Congo Basin Roads",
+                        {"name": "UMD Landsat 2010",
                          "type": "tms",
-                         "template": "https://maphubs.com/raster/loggingroads/{z}/{x}/{y}.png",
-                         "overlay": true
+                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2010/{z}/{y}/{x}.png"
                         },
-                        {"name": "DRC Logging Concessions",
+                        {"name": "UMD Landsat 2009",
                          "type": "tms",
-                         "template": "http://api.tiles.mapbox.com/v4/crowdcover.332b16e8/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiY3Jvd2Rjb3ZlciIsImEiOiI3akYtNERRIn0.uwBAdtR6Zk60Bp3vTKj-kg",
-                         "overlay": true
+                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2009/{z}/{y}/{x}.png"
+                        },
+                        {"name": "UMD Landsat 2008",
+                         "type": "tms",
+                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2008/{z}/{y}/{x}.png"
+                        },
+                        {"name": "UMD Landsat 2007",
+                         "type": "tms",
+                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2007/{z}/{y}/{x}.png"
+                        },
+                        {"name": "UMD Landsat 2006",
+                         "type": "tms",
+                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2006/{z}/{y}/{x}.png"
+                        },
+                        {"name": "UMD Landsat 2005",
+                         "type": "tms",
+                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2005/{z}/{y}/{x}.png"
+                        },
+                        {"name": "UMD Landsat 2004",
+                         "type": "tms",
+                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2004/{z}/{y}/{x}.png"
+                        },
+                        {"name": "UMD Landsat 2003",
+                         "type": "tms",
+                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2003/{z}/{y}/{x}.png"
+                        },
+                        {"name": "UMD Landsat 2002",
+                         "type": "tms",
+                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2002/{z}/{y}/{x}.png"
+                        },
+                        {"name": "UMD Landsat 2001",
+                         "type": "tms",
+                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2001/{z}/{y}/{x}.png"
+                        },
+                        {"name": "UMD Landsat 2000",
+                         "type": "tms",
+                         "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2000/{z}/{y}/{x}.png"
                         }
+
                 ];
 
                 id = iD()
