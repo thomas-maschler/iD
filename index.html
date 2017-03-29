@@ -262,7 +262,8 @@
                       "2013",
                       "2014",
                       "2015",
-                      "2016"
+                      "2016",
+                      "2017"
                   ],
                   "label": "Start Date"
                 };
@@ -279,6 +280,8 @@
                     "start_date"
                   ]
                 };
+
+                iD.data.presets.defaults["line"] = ["logging_road"].concat(iD.data.presets.defaults["line"]);
 
                 iD.data.presets.presets["plantation_road"] = {
                   "name": "Plantation Road",
