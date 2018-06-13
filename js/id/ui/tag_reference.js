@@ -64,7 +64,7 @@ iD.ui.TagReference = function(tag, context) {
             var wikiLink = body
                 .append('a')
                 .attr('target', '_blank')
-                .attr('href', 'http://wiki.openstreetmap.org/wiki/' + docs.title);
+                .attr('href', 'https://wiki.openstreetmap.org/wiki/' + docs.title);
 
             wikiLink.append('span')
                 .attr('class','icon icon-pre-text out-link');
